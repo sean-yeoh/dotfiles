@@ -3,3 +3,5 @@
 ^/stow\.sh$
 ^/common$
 ^/\.git$
+^/\.gitignore$
+^/\.config/fish/env$
