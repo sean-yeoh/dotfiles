@@ -1,0 +1,22 @@
+[user]
+	name = Sean Yeoh
+	email = sysxdev@protonmail.com
+
+[core]
+	autocrlf = input
+	safecrlf = warn
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+[init]
+	defaultBranch = main
+
+[pull]
+  rebase = true
+
+[alias]
+	lg = log --graph --oneline --decorate
