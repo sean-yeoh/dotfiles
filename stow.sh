@@ -16,12 +16,18 @@ esac
 
 cd -- "$(dirname -- "$0")"
 
-# Preview
-stow --simulate --verbose --target="$HOME" .
+preview="${1-}"
+set -- common
+if [ "$(uname)" = "Darwin" ]; then
+    set -- "$@" mac
+fi
 
-if [ "${1-}" = --preview ]; then
+# Preview
+stow --simulate --verbose --target="$HOME" "$@"
+
+if [ "$preview" = --preview ]; then
     exit 0
 fi
 
 # Apply
-stow --target="$HOME" .
+stow --target="$HOME" "$@"

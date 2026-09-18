@@ -1,1 +1,3 @@
-/.config/fish/env
+/common/.config/fish/env
+/mac/.config/karabiner/automatic_backups/
+/mac/.config/karabiner/assets/
