@@ -39,6 +39,15 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-09-18T03:03:35.578Z",
       "updatedAt": "2026-09-18T03:03:35.578Z"
+    },
+    "commit": {
+      "source": "sean-yeoh/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sean-yeoh/skills.git",
+      "skillPath": "skills/commit/SKILL.md",
+      "skillFolderHash": "0646910d662a0d2072b9652888cee662ce964896",
+      "installedAt": "2026-09-18T03:27:01.382Z",
+      "updatedAt": "2026-09-18T03:27:01.382Z"
     }
   },
   "dismissed": {
