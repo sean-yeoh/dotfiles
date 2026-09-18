@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "@inobit/pi-permission": {
+      "version": "1.1.1",
+      "enabledFeatures": null,
+      "enabled": true
+    }
+  },
+  "settings": {}
+}

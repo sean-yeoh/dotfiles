@@ -1,0 +1,27 @@
+{
+  "sensitivePatterns": [
+    "*.env",
+    "*.env.*",
+    "*.pem",
+    "*.key",
+    "~/.ssh",
+    "~/.ssh/*"
+  ],
+  "envExampleReadAllowed": false,
+  "dangerousBashCommands": [
+    "sudo",
+    "rm",
+    "/bin/rm",
+    "/usr/bin/rm",
+    "git rm",
+    "/usr/bin/git rm",
+    "git clean",
+    "/usr/bin/git clean",
+    "git reset --hard",
+    "/usr/bin/git reset --hard",
+    "truncate",
+    "/usr/bin/truncate"
+  ],
+  "reviewLog": true,
+  "toggleModeShortcut": ""
+}

@@ -1,0 +1,65 @@
+providers:
+  webSearchOrder:
+    []
+setupVersion: 2
+modelRoles:
+  default: openai-codex/gpt-6-astra
+security:
+  enabled: true
+statusLine:
+  preset: default
+  compactThinkingLevel: false
+bash:
+  patterns:
+    - match: sudo
+      approval: prompt
+    - match: sudo *
+      approval: prompt
+    - match: rm
+      approval: prompt
+    - match: rm *
+      approval: prompt
+    - match: /bin/rm
+      approval: prompt
+    - match: /bin/rm *
+      approval: prompt
+    - match: /usr/bin/rm
+      approval: prompt
+    - match: /usr/bin/rm *
+      approval: prompt
+    - match: git rm
+      approval: prompt
+    - match: git rm *
+      approval: prompt
+    - match: /usr/bin/git rm
+      approval: prompt
+    - match: /usr/bin/git rm *
+      approval: prompt
+    - match: git clean
+      approval: prompt
+    - match: git clean *
+      approval: prompt
+    - match: /usr/bin/git clean
+      approval: prompt
+    - match: /usr/bin/git clean *
+      approval: prompt
+    - match: git reset --hard
+      approval: prompt
+    - match: git reset --hard *
+      approval: prompt
+    - match: /usr/bin/git reset --hard
+      approval: prompt
+    - match: /usr/bin/git reset --hard *
+      approval: prompt
+    - match: truncate
+      approval: prompt
+    - match: truncate *
+      approval: prompt
+    - match: /usr/bin/truncate
+      approval: prompt
+    - match: /usr/bin/truncate *
+      approval: prompt
+composer:
+  shape: band
+dev:
+  autoqaConsent: granted

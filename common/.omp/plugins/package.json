@@ -1,0 +1,7 @@
+{
+  "name": "omp-plugins",
+  "private": true,
+  "dependencies": {
+    "@inobit/pi-permission": "^1.1.1"
+  }
+}

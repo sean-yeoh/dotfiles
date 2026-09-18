@@ -17,17 +17,21 @@ esac
 cd -- "$(dirname -- "$0")"
 
 preview="${1-}"
-set -- common
-if [ "$(uname)" = "Darwin" ]; then
-    set -- "$@" mac
-fi
+platform="$(uname)"
 
 # Preview
-stow --simulate --verbose --target="$HOME" "$@"
+# Keep runtime data beside common configuration files outside the repository.
+stow --simulate --verbose --no-folding --target="$HOME" common
+if [ "$platform" = "Darwin" ]; then
+    stow --simulate --verbose --target="$HOME" mac
+fi
 
 if [ "$preview" = --preview ]; then
     exit 0
 fi
 
 # Apply
-stow --target="$HOME" "$@"
+stow --no-folding --target="$HOME" common
+if [ "$platform" = "Darwin" ]; then
+    stow --target="$HOME" mac
+fi
