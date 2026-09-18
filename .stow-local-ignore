@@ -1,4 +1,5 @@
 ^/Brewfile$
+^/backup\.sh$
 ^/README\.md$
 ^/stow\.sh$
 ^/common$
