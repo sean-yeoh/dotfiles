@@ -19,6 +19,26 @@
       "skillFolderHash": "7d4a135a199a5d7447c4886bcd7ffe742a627bc9",
       "installedAt": "2026-08-26T03:31:09.065Z",
       "updatedAt": "2026-09-18T02:46:49.360Z"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "skillFolderHash": "3df14e2d3a89459bf300614be9247e3ce74798f8",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-18T03:03:35.576Z",
+      "updatedAt": "2026-09-18T03:03:35.576Z"
+    },
+    "teach": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/teach/SKILL.md",
+      "skillFolderHash": "2ab11f2f51f3c29771edb5d4258d807a49462491",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-18T03:03:35.578Z",
+      "updatedAt": "2026-09-18T03:03:35.578Z"
     }
   },
   "dismissed": {
@@ -26,14 +46,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",
