@@ -1,0 +1,5 @@
+[custom.wireguard]
+command = "if test (uname) = Darwin; for f in /var/run/wireguard/*.name; basename $f .name; end 2>/dev/null | paste -sd ' ' -; else; wg show interfaces 2>/dev/null | paste -sd ' ' -; end"
+when = "test (uname) = Darwin && test -n \"$(find /var/run/wireguard -name '*.name' -maxdepth 1 2>/dev/null)\" || test (uname) != Darwin && wg show interfaces 2>/dev/null | grep -q ."
+format = "[🔐 WG: $output]($style) "
+style = "yellow"
