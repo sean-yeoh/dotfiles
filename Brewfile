@@ -31,7 +31,7 @@ brew "gh"
 # GNU multiple precision arithmetic library
 brew "gmp"
 # Agent multiplexer that lives in your terminal
-brew "herdr", restart_service: :changed
+brew "herdr"
 # Process manager for Procfile-based applications
 brew "hivemind"
 # Dex to Java decompiler
