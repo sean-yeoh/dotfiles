@@ -9,7 +9,7 @@ brew "autoconf"
 # Library for command-line editing
 brew "readline"
 # Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
+brew "openssl@3", link: true
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Tool for emulating mouse and keyboard events
