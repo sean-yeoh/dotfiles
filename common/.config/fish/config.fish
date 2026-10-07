@@ -46,11 +46,11 @@ set PATH "$ANDROID_HOME/emulator" "$ANDROID_HOME/platform-tools" $PATH
 #     ln -s $agentsmd_source $agentsmd_dest
 # end
 
-# set skills_source ~/.agents/skills
-# set skills_dest ~/.claude/skills
+set skills_source ~/.agents/skills
+set skills_dest ~/.claude/skills
 
-# if not test -e $skills_dest; and not test -L $skills_dest
-#     ln -s $skills_source $skills_dest
-# end
+if not test -e $skills_dest; and not test -L $skills_dest
+    ln -s $skills_source $skills_dest
+end
 
 set -Ux PI_CODING_AGENT_DIR "$HOME/.omp/agent"
