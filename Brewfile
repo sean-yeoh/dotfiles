@@ -126,11 +126,13 @@ cask "abue-ammar/tinycast/tinycast", trusted: true
 cask "transmission"
 # Open-source code editor
 cask "visual-studio-code"
+vscode "astro-build.astro-vscode"
 vscode "biomejs.biome"
 vscode "dart-code.dart-code"
 vscode "dart-code.flutter"
 vscode "dbaeumer.vscode-eslint"
 vscode "esbenp.prettier-vscode"
+vscode "golang.go"
 vscode "jetbrains.kotlin-server"
 vscode "nefrob.vscode-just-syntax"
 vscode "prisma.prisma"
