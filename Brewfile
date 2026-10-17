@@ -72,6 +72,8 @@ brew "stow"
 brew "unixodbc"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Unified toolchain and entry point for web development
+brew "vite-plus"
 # Watch files and take action when they change
 brew "watchman"
 # Tools for the WireGuard secure network tunnel
