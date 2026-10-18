@@ -2,6 +2,7 @@ tap "abue-ammar/tinycast", trusted: true
 tap "asmvik/formulae"
 tap "can1357/tap"
 tap "golangci/tap", trusted: true
+tap "stablyai/orca"
 # Simple, modern, secure file encryption
 brew "age"
 # Automatic configure script builder
@@ -104,8 +105,6 @@ cask "google-chrome"
 cask "google-chrome@dev"
 # Free and open-source media player
 cask "iina"
-# Open-source screen recorder built with web technology
-cask "kap"
 # File archiver
 cask "keka"
 # Helper application for the Keka file archiver
@@ -114,6 +113,8 @@ cask "kekaexternalhelper"
 cask "ngrok"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# IDE for orchestrating AI coding agents across terminals and worktrees
+cask "stablyai/orca/orca", trusted: true
 # VPN client focusing on security
 cask "protonvpn"
 # Screenshot measurement and annotation tool
