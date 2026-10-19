@@ -42,7 +42,11 @@ If a check fails, report the failure and stop.
 3. Start one worker with `--agent codex`:
    - For uncommitted changes, use `--worktree current`. A new worktree contains only committed files and cannot see the changes.
    - For a committed target, use a new child worktree, so the worker cannot affect the user's checkout.
-4. If worker start fails, report the failure stage and error. Retry at most once. Do not retry a task that is near its failure limit. Create a new task instead.
+4. If worker start fails at `agent_readiness`, first try to recover the worker terminal. This does not count as the retry:
+   1. Find the terminal handle in the start result or with `orca terminal list --json`. Read it with `orca terminal read`.
+   2. If the Codex composer (the `›` row) holds stray text, such as the terminal version reply `>|xterm.js(6.0.0)`, clear it with `orca terminal send --terminal <handle> --text $'\x15'` (Ctrl-U). Read the terminal again and confirm that the `? for shortcuts` hint row shows. Orca's readiness check waits for that row, and Codex hides it while the composer has text.
+   3. Start the worker again on that terminal: use `--terminal <handle>` instead of `--agent codex`, the `--worktree` of that terminal, the same `--task`, and `--retry-of <dispatch_id>`.
+5. If worker start fails for another reason, or the recovery fails, report the failure stage and error. Retry at most once. Do not retry a task that is near its failure limit. Create a new task instead.
 
 Review spec template. Replace the angle-bracket fields:
 
