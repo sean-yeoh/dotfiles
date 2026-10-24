@@ -93,6 +93,8 @@ cask "claude-code@latest"
 cask "codex"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Provides developers secure tunnels to share local web services
+cask "devtunnel"
 # Web browser
 cask "firefox@developer-edition"
 # Set of tools to manage resources and applications hosted on Google Cloud

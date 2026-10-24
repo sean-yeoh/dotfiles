@@ -86,6 +86,15 @@
       "skillFolderHash": "76b44097bca5869261f9cce3e8e043d381fc0689",
       "installedAt": "2026-10-18T13:40:07.258Z",
       "updatedAt": "2026-10-18T13:40:07.258Z"
+    },
+    "fact-check": {
+      "source": "sean-yeoh/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sean-yeoh/skills.git",
+      "skillPath": "skills/fact-check/SKILL.md",
+      "skillFolderHash": "af1dcba56e055d72bc15a06719e2bb6c0dbb544d",
+      "installedAt": "2026-10-24T07:20:41.769Z",
+      "updatedAt": "2026-10-24T07:20:41.769Z"
     }
   },
   "dismissed": {
@@ -97,6 +106,7 @@
     "codex",
     "cursor",
     "droid",
+    "fx",
     "gemini-cli",
     "github-copilot",
     "kilo",
